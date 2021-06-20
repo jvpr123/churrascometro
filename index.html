@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascômetro</title>
+
+    <link rel="icon" href="./images/icons/meat.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class='left-image dimensions blur'>
+
+        <div class='title-container'>
+            <h1 class='title'>Churrascômetro</h1>
+            <h2 class='slogan'>Planejar seu churrasco ficou mais fácil!</h2>
+        </div>
+        
+        <footer class='footer-desktop'>
+            <p>Desenvolvedor: João Victor Rodrigues</p>
+
+            <a class='general-button' href='https://www.linkedin.com/in/jo%C3%A3o-victor-pereira-rodrigues-6a65b8128/'> <img src='./images/icons/linkedin.png'> Linkedin</a>
+            <a class='general-button' href='https://github.com/jvpr123'> <img src='./images/icons/github.png'> GitHub</a>
+            <a class='freepik-att' href='https://br.freepik.com/vetores/alimento'>Alimento vetor criado por stories - br.freepik.com</a>
+        </footer>
+
+    </header>
+
+    <main class='input-field dimensions blur'>
+
+        <div class="mobile-image"></div>
+        
+        <form id='form-id' class='display-field'>
+            <h3 class='general-title'>Quantos amigos vão e quanto tempo vão ficar pra curtir?</h3>
+
+            <ul>
+                <li id='adults'> <img src='./images/icons/adults.png'> <input class='input verify' type='number' min='0' name='adults' placeholder='Adultos' value=''> </li>
+                <li id='children'> <img src='./images/icons/children.png'> <input class='input verify' type='number' min='0' name='children' placeholder='Crianças' value=''>> </li>
+                <li id='duration'> <img src='./images/icons/clock.png'> <input class='input verify' type='number' min='0' name='duration' placeholder='Duração' value=''>> </li>
+
+                <li id='warning'> <img src='./images/icons/exclamation-mark.png'> <span>Informe a quantidade de pessoas e a duração antes de calcular!</span></li>
+            </ul>
+
+            <div class='button-container'>
+                <button type='button' form='form-id' id='calculate' class='general-button'>Calcular</button>
+                <button type='reset' form='form-id' id='erase' class='general-button'>Apagar</button>
+            </div>
+        </form>
+        
+    </main>
+
+    <footer class='footer-mobile blur'>
+        <p>Desenvolvedor: João Victor Rodrigues</p>
+        
+        <div class="button-container">
+            <a class='general-button' href='https://www.linkedin.com/in/jo%C3%A3o-victor-pereira-rodrigues-6a65b8128/'> <img src='./images/icons/linkedin.png'> Linkedin</a>
+            <a class='general-button' href='https://github.com/jvpr123'> <img src='./images/icons/github.png'> GitHub</a>
+        </div>
+        <a class='freepik-att' href='https://br.freepik.com/vetores/alimento'>Alimento vetor criado por stories - br.freepik.com</a>
+    </footer>
+
+    <div class='results-field'>
+
+        <h3>Você vai precisar de:</h3>
+
+        <div class="itens">
+            <ul>
+                <li> <img src='./images/icons/meat.png'> <span class='input' id='meat'>Carne</span> </li>
+                <li> <img src='./images/icons/beer.png'> <span class='input' id='beer'>Cerveja</span> </li>
+                <li> <img src='./images/icons/drink.png'> <span class='input' id='drink'>Água ou Refrigerante</span> </li>
+            </ul>
+    
+            <div class='button-container'>
+                <button id='copy' class='general-button'>Copiar</button>
+                <button id='back' class='general-button' type='reset' form='form-id'>Voltar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src='./javascript/script.js'></script>
+
+</body>
+</html>
+
+<!--  -->

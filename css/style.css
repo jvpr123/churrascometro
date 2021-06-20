@@ -1,0 +1,655 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Fredericka the Great', cursive;
+    letter-spacing: 1.5px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.dimensions {
+    border-right: 3px solid #ff735c;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 30%;
+}
+
+.left-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+    width: 50%;
+
+    background-image: url('../images/body-images/barbecue.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.left-image .title-container {
+    width: 90%;
+    height: auto;
+
+    margin-top: 1rem;
+
+    color: orangered;
+    text-align: center;
+}
+
+.left-image .title-container .title {
+    text-align: center;
+    font-size: clamp(3rem, 3.5rem, 4.5rem);
+    letter-spacing: 8px;
+}
+
+.left-image .title-container .slogan {
+    margin-top: 5px;
+
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+.footer-desktop {
+    width: 90%;
+    height: auto;
+
+    margin-bottom: 2rem;
+
+    text-align: center;
+    color: orangered;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.left-image .footer-desktop p {
+    margin-bottom: 1.5rem;
+}
+
+/* ---------------------------------------------------- */
+
+/* BUTTONS SETTINGS: */
+
+.general-button {
+
+    width: 10rem;
+    height: 4rem;
+
+    margin: 10px auto 5px auto;
+    padding: 10px;
+    
+    background-color: #ff735c;
+    border: 1px solid #ff735c;
+    outline: none;
+    
+    border-radius: 20px;
+
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.35rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.general-button:hover {
+    background-color: orangered;
+    box-shadow: 0px 8px 15px orangered;
+    cursor: pointer;
+
+    color: white;
+    font-weight: bold;
+}
+
+.freepik-att {
+    display: block;
+
+    margin-top: 2rem;
+    
+    color: orangered;
+    font-size: .8rem;
+    text-decoration: none;
+
+}
+
+/* ---------------------------------------------------- */
+
+/* USER INPUT FIELDS SETTINGS: */
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 45%;
+
+    text-align: center;
+}
+
+.input-field .general-title {
+    width: 80%;
+    height: auto;
+
+    margin: 15rem auto 3rem auto;
+
+    color: orangered;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.input-field .display-field {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    height: auto;
+
+    margin: 2rem auto 15rem auto;
+
+    align-items: center;
+}
+
+.input-field .display-field ul {
+    width: 80%;
+    height: 100%;
+}
+
+.input {
+    width: 70%;
+
+    margin: .75rem auto;
+    padding: 1.5rem;
+
+    background-color: transparent;
+    border: 3px solid #ff735c;
+    box-shadow: 0 5px 15px #ff735c;
+    border-radius: 20px;
+    outline: none;
+
+    color: orangered;
+    text-align: center;
+    font-weight: bold;
+}
+
+#warning {
+    display: none;
+    width: 70%;
+    margin: 2rem auto 0 auto;
+    color: orangered;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+ul li img {
+    height: 3.2rem;
+    margin: auto 1rem auto 0;
+    border-radius: 10px;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+::placeholder {
+    color: orangered;
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+.button-container {
+    margin: 3rem auto 0 auto;
+}
+
+.mobile-image {
+    display: none;
+}
+
+/* ---------------------------------------------------- */
+
+#blur {
+    width: 100vw;
+    filter: none;
+}
+
+.results-field {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 30vw;
+    min-width: 315px;
+    max-width: 465px;
+
+    height: 60vh;
+    max-height: 420px;
+
+    padding: 20px;
+
+    background-color: white;
+    border: 3px solid orangered;;
+    border-radius: 40px;
+    box-shadow: 0px 8px 15px #ff735c;
+
+    text-align: center;
+}
+
+.results-field h3 {
+    color: orangered;
+    margin: auto;
+
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.itens {
+    width: 80%;
+    margin: auto;
+
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* ---------------------------------------------------- */
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
+
+    .left-image .title-container {
+        margin-top: 5rem;
+        padding-left: 2rem;
+    }
+
+    .left-image .title-container .slogan {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+
+    .input-field .general-title {
+        margin: 25rem auto 3rem auto;
+    }
+    
+    .input-field .display-field {
+        margin: 2rem auto 20rem auto;
+        padding: 2rem 0;
+    }
+
+    .button-container {
+        margin: 3.5rem auto 0 auto;
+    }
+
+    .general-button {
+        width: 12rem;
+        height: 5rem;
+    
+        margin: 10px auto 5px auto;
+        padding: 12px;
+        
+        background-color: #ff735c;
+        border: 1px solid #ff735c;
+        outline: none;
+        
+        border-radius: 20px;
+    
+        color: white;
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 1.35rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .left-image .footer-desktop {
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    
+        width: 100vw;;
+    }
+    
+    .dimensions {
+        border-right: none;
+        border-bottom: 3px solid #ff735c;
+        border-bottom-right-radius: 30%;
+        border-bottom-left-radius: 30%;
+    }
+    
+    .left-image {
+        height: 18vh;
+        width: 100%;
+        background-image: none;
+    }
+    
+    .left-image .title-container {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    
+        margin-top: 2.5rem;
+    
+        color: orangered;
+        text-align: center;
+    }
+    
+    .left-image .title-container .title {
+        text-align: center;
+        font-size: 7rem;
+        letter-spacing: 8px;
+    }
+    
+    .left-image .title-container .slogan {
+        margin-top: 5px;
+    
+        text-align: center;
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+    }
+    
+    body .footer-mobile {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+
+        margin: 2rem auto;
+
+        text-align: center;
+        color: orangered;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .footer-mobile p {
+        margin: 2rem auto 3rem auto;
+    }
+
+    .left-image .footer-desktop {
+        display: none;
+    }
+    
+    /* ---------------------------------------------------- */
+    
+    /* BUTTONS SETTINGS: */
+    
+    .general-button {
+        width: 20rem;
+        height: 6rem;
+    
+        margin: 1rem auto 2rem auto;
+        padding: 10px;
+        
+        background-color: orangered;
+        border: 1px solid orangered;
+        outline: none;
+        
+        border-radius: 20px;
+    
+        color: white;
+        text-align: center;
+        letter-spacing: 2.5px;
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .freepik-att {
+        display: block;
+        
+        margin-top: 2rem;
+        
+        color: orangered;
+        font-size: .8rem;
+        text-decoration: none;
+    
+    }
+    
+    /* ---------------------------------------------------- */
+    
+    /* USER INPUT FIELDS SETTINGS: */
+    
+    .input-field {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    
+        text-align: center;
+    }
+
+    .mobile-image {
+        display: inline-block;
+        box-sizing: border-box;
+
+        margin: 3rem auto;
+        width: 60vw;
+        height: 30vh;
+
+        background-image: url('../images/body-images/barbecue.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    .input-field .general-title {
+        width: 80%;
+        height: auto;
+    
+        margin: 2rem auto 3rem auto;
+    
+        color: orangered;
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    .input-field .display-field {
+        display: flex;
+        flex-direction: column;
+    
+        width: 80%;
+        height: auto;
+    
+        margin: 2rem auto;
+    
+        align-items: center;
+    }
+    
+    .input-field .display-field ul {
+        width: 80%;
+        height: 100%;
+    }
+    
+    .input {
+        width: 70%;
+        height: auto;
+    
+        margin: 1rem auto;
+        padding: 2rem;
+    
+        background-color: transparent;
+        border: 3px solid #ff735c;
+        box-shadow: 0 5px 15px #ff735c;
+        border-radius: 20px;
+        outline: none;
+    
+        color: orangered;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    ul li img {
+        height: 4rem;
+        margin: auto 1rem auto 0;
+        border-radius: 10px;
+    }
+    
+    li {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    ::placeholder {
+        color: orangered;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    /* ---------------------------------------------------- */
+}
+
+@media screen and (max-width: 600px) {
+    .left-image .title-container {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-top: 2rem;
+    }
+    
+    .left-image .title-container .title {
+        text-align: center;
+        font-size: 4rem;
+        letter-spacing: 5px;
+        margin: auto;
+    }
+    
+    .left-image .title-container .slogan {
+        margin-top: 5px;
+    
+        text-align: center;
+        font-size: 1.8rem;
+        letter-spacing: 1.5px;
+    }
+
+    .input-field {
+        height: auto;
+    }
+    
+    body .footer-mobile {
+        margin: 1rem auto;
+}
+    
+    /* ---------------------------------------------------- */
+    
+    /* BUTTONS SETTINGS: */
+    
+    .general-button {
+        width: 15rem;
+        height: 6rem;
+    }
+    
+    /* ---------------------------------------------------- */
+    
+    /* USER INPUT FIELDS SETTINGS: */
+    
+    .mobile-image {
+        display: inline-block;
+        box-sizing: border-box;
+
+        margin: 2rem auto;
+        width: 80%;
+        height: 30vh;
+
+        background-image: url('../images/body-images/barbecue.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .input-field .general-title {
+        width: 80%;
+        height: auto;
+    
+        margin: .5rem auto 3rem auto;
+    
+        color: orangered;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    
+    .input-field .display-field {
+        display: flex;
+        flex-direction: column;
+    
+        width: 80%;
+        height: auto;
+    
+        margin: 2rem auto;
+    
+        align-items: center;
+    }
+    
+    .input-field .display-field ul {
+        width: 80%;
+        height: 100%;
+    }
+    
+    .input {
+        width: 60%;
+        height: auto;
+    
+        margin: 1rem auto;
+        padding: 2rem;
+    
+        background-color: transparent;
+        border: 3px solid #ff735c;
+        box-shadow: 0 5px 15px #ff735c;
+        border-radius: 20px;
+        outline: none;
+    
+        color: orangered;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    ul li img {
+        height: 4rem;
+        margin: auto 2rem auto 0;
+    }
+    
+    
+    ::placeholder {
+        color: orangered;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    
+    /* ---------------------------------------------------- */
+}
