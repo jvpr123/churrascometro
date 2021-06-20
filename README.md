@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+## :meat_on_bone: CHURRASCOMETRO :meat_on_bone:
 
-You can use the [editor on GitHub](https://github.com/jvpr123/churrascometro/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Churrascometro is a simple website created to help the user to find out how much food and drink it needs for a barbecue.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### How does it works?
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+To calculate the quantity of meat, beer and soda/water the barbecue requires, the user must fill the the fields **'Adults'**, **'Children'** and **'Duration'**. After clicking on **'Calculate'**, the page will return a box telling the user the quantitiy of each item required.
+At this point, the user can also copy the itens to clipboard in order to save it in his own device or share it with someone else.
 
 ```markdown
-Syntax highlighted code block
+Technologies:
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+1. HTML
+2. CSS
+3. Javascript
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Access the website and try it:
 
-### Jekyll Themes
+[Churrascometro](https://jvpr123.github.io/churrascometro/)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jvpr123/churrascometro/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Follow me on LinkedIn
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[João Victor Pereira Rodrigues](https://www.linkedin.com/in/jo%C3%A3o-victor-pereira-rodrigues-6a65b8128/)
